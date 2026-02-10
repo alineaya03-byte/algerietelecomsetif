@@ -1,27 +1,84 @@
+/* عام */
 body {
   margin: 0;
   font-family: "Tahoma", Arial, sans-serif;
   direction: rtl;
-  background:
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-    url("background.jpg") no-repeat center center fixed;
-  background-size: contain;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+              url("background.jpg") no-repeat center top;
+  background-size: cover;
+  color: #333;
 }
 
+/* Header */
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-bottom: 2px solid #0066a1;
 }
 
 header h1 {
-  font-size: 32px;
+  font-size: 36px;
   color: #0066a1;
   margin-bottom: 10px;
 }
 
 header p {
+  font-size: 20px;
+}
+
+/* الأزرار */
+a.btn {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 15px 25px;
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
   font-size: 18px;
-  color: #333;
+  transition: 0.3s;
+}
+
+a.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* نموذج الشكوى */
+form, iframe {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* لوحة الإدارة */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #0066a1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #004a70;
 }
 
 .admin-btn {
@@ -34,4 +91,9 @@ header p {
   text-decoration: none;
   border-radius: 6px;
   font-size: 14px;
+  transition: 0.3s;
+}
+
+.admin-btn:hover {
+  background: #222;
 }
