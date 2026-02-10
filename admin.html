@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>لوحة الإدارة - CMP DOT SETIF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h2 style="text-align:center;">🔐 دخول لوحة الإدارة</h2>
+
+<div style="text-align:center; margin-top:50px;">
+  <input type="password" id="pass" placeholder="أدخل الرقم السري">
+  <br><br>
+  <button onclick="login()">دخول</button>
+</div>
+
+<script>
+function login() {
+  const password = "1234"; // ضع الرقم السري الذي تريد
+  if(document.getElementById("pass").value === password){
+    window.location.href = "dashboard.html";
+  } else {
+    alert("الرقم السري غير صحيح");
+  }
+}
+</script>
+
+</body>
+</html>
